@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оффер: CEO НейроКлуба</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+        
+        /* Пирамида Минто - главный вывод */
+        .pyramid-top {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .pyramid-top h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .pyramid-top .subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .pyramid-top .meta {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        /* Средний уровень - ключевые аргументы */
+        .pyramid-middle {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .argument-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .argument-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .argument-card h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .argument-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .argument-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .argument-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        /* Инфографика */
+        .infographic {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .infographic h3 {
+            color: #2d3748;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .metric-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            font-size: 14px;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Таблицы */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        tr:hover {
+            background: #f7fafc;
+        }
+        
+        /* Визуализация временной линии */
+        .timeline {
+            position: relative;
+            padding: 30px 0;
+            margin: 30px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin: 40px 0;
+            width: 45%;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 55%;
+            text-align: left;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            border-left: none;
+            border-right: 4px solid #764ba2;
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        /* Секции */
+        section {
+            margin-bottom: 50px;
+            page-break-inside: avoid;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #4a5568;
+            font-size: 22px;
+            margin: 25px 0 15px 0;
+        }
+        
+        h4 {
+            color: #718096;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4a5568;
+        }
+        
+        .highlight-box {
+            background: #fff5e6;
+            border-left: 4px solid #f6ad55;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .success-box {
+            background: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fffaf0;
+            border-left: 4px solid #ed8936;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        /* Печать */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                padding: 0;
+            }
+            
+            .pyramid-top {
+                page-break-after: avoid;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+            
+            .timeline::before {
+                display: none;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                text-align: left !important;
+                margin: 20px 0;
+            }
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ПИРАМИДА МИНТО: Главный вывод (верх пирамиды) -->
+        <div class="pyramid-top">
+            <h1>Оффер: CEO НейроКлуба</h1>
+            <div class="subtitle">Операционный лидер для масштабирования AI-образования</div>
+            <div class="meta">
+                <strong>Проект:</strong> НейроКлуб (NeuroBRO) | 
+                <strong>Дата:</strong> 18 февраля 2026 г. | 
+                <strong>Статус:</strong> Проект для обсуждения
+            </div>
+        </div>
+
+        <!-- ПИРАМИДА МИНТО: Ключевые аргументы (средний уровень) -->
+        <div class="pyramid-middle">
+            <div class="argument-card">
+                <h2>🎯 Роль</h2>
+                <ul>
+                    <li>Операционный лидер</li>
+                    <li>Превращение продукта в бизнес</li>
+                    <li>Управление ростом и масштабированием</li>
+                </ul>
+            </div>
+            
+            <div class="argument-card">
+                <h2>💰 Вознаграждение</h2>
+                <ul>
+                    <li>Revenue Share от прибыли</li>
+                    <li>15–25% чистой прибыли</li>
+                    <li>240K+ ₽/мес при достижении целей</li>
+                </ul>
+            </div>
+            
+            <div class="argument-card">
+                <h2>📈 Потенциал</h2>
+                <ul>
+                    <li>500 подписчиков к лету 2026</li>
+                    <li>MRR 1,5 млн ₽/мес</li>
+                    <li>Рост до 300 млн ₽ оборота (2027)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ДЕТАЛИ: О проекте -->
+        <section>
+            <h2>1. О проекте</h2>
+            
+            <h3>Что такое НейроКлуб</h3>
+            <p>НейроКлуб — подписной образовательный сервис по автоматизации работы с AI для профессионалов из разных ниш. Ключевое отличие от конкурентов: мы даём <strong>готовые рабочие инструменты</strong>, а не теорию.</p>
+            
+            <blockquote>
+                Метафора: «Мы не учим делать топор — мы даём готовый топор.»
+            </blockquote>
+            
+            <h3>Что получает подписчик</h3>
+            <ul>
+                <li>Работающие микросервисы: скрипты, автоматизации, AI-агенты</li>
+                <li>AI-наставник по каждой нише (оцифрованная база знаний, отвечает на 70–80% вопросов)</li>
+                <li>Еженедельные вебинары по внедрению AI</li>
+                <li>Реальные кейсы с измеримыми результатами</li>
+                <li>Сервисы (транскрибатор, платформа нейронок и др.)</li>
+            </ul>
+            
+            <h3>Тарифная линейка</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Продукт</th>
+                        <th>Цена</th>
+                        <th>Формат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Подписка</strong></td>
+                        <td>3 000 ₽/мес</td>
+                        <td>Все ниши, AI-наставник, вебинары, сервисы</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Мастер-группа с экспертом</strong></td>
+                        <td>50 000 ₽ (разово, 1 мес)</td>
+                        <td>4 созвона/нед по 1,5–2ч, обратная связь, сертификат</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Индивидуальный менторинг</strong></td>
+                        <td>150 000 ₽ (разово, 1 мес)</td>
+                        <td>Личные сессии 2–3ч/нед, аудит бизнеса, стратегия</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="highlight-box">
+                <h4>Стратегическая роль клуба</h4>
+                <p>НейроКлуб — не просто образовательный продукт. Это <strong>воронка в B2B-сегмент</strong>:</p>
+                <ul>
+                    <li>Массовая аудитория (цель: 30 000 подписчиков Telegram) создаёт доверие</li>
+                    <li>Реальные кейсы подтверждают экспертизу</li>
+                    <li>Сотрудники обучаются → рекомендуют руководителям → корпоративные контракты</li>
+                </ul>
+                <p><strong>B2B-продукты:</strong> модули автоматизации от 500 000 ₽, корпоративные проекты 15–20 млн ₽.</p>
+            </div>
+        </section>
+
+        <!-- ДЕТАЛИ: Роль CEO -->
+        <section>
+            <h2>2. Роль CEO</h2>
+            
+            <h3>Суть роли</h3>
+            <p>CEO НейроКлуба — это <strong>операционный лидер</strong>, который превращает продукт и команду в работающий бизнес-механизм. Основатель (Богдан) фокусируется на продукте, технологиях и медийности — CEO берёт на себя всё остальное.</p>
+            
+            <h3>Формула разделения</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Основатель (Богдан)</th>
+                        <th>CEO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Продукт и технологии</td>
+                        <td>Операционка и рост</td>
+                    </tr>
+                    <tr>
+                        <td>Медийка и контент</td>
+                        <td>Показатели и контроль</td>
+                    </tr>
+                    <tr>
+                        <td>Автоматизация экспертов</td>
+                        <td>Управление экспертами</td>
+                    </tr>
+                    <tr>
+                        <td>B2B-продажи (крупные)</td>
+                        <td>Выстраивание системы продаж</td>
+                    </tr>
+                    <tr>
+                        <td>Стратегическое видение</td>
+                        <td>Тактическая реализация</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ДЕТАЛИ: Обязанности -->
+        <section>
+            <h2>3. Обязанности CEO</h2>
+            
+            <div class="pyramid-middle">
+                <div class="argument-card">
+                    <h3>3.1. Операционное управление</h3>
+                    <ul>
+                        <li>Контроль дедлайнов по всем направлениям</li>
+                        <li>Координация команды (7 человек)</li>
+                        <li>Ведение операционных метрик</li>
+                        <li>Организация еженедельных синков</li>
+                        <li>Решение операционных проблем</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>3.2. Управление экспертами</h3>
+                    <ul>
+                        <li>Поиск и привлечение экспертов</li>
+                        <li>Переговоры и договоры</li>
+                        <li>Контроль регулярной подачи контента</li>
+                        <li>Обеспечение качества</li>
+                        <li>Управление расписанием</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>3.3. Рост и удержание</h3>
+                    <ul>
+                        <li>Прогнозирование выручки</li>
+                        <li>Анализ оттока (churn)</li>
+                        <li>Реферальная программа</li>
+                        <li>Контроль NPS</li>
+                        <li>Автоматизированный контроль качества</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>3.4. Контент и коммуникация</h3>
+                    <ul>
+                        <li>Управление контент-планом</li>
+                        <li>Коммуникация в Telegram</li>
+                        <li>Обновление материалов</li>
+                        <li>Защита контента</li>
+                        <li>Организация вебинаров</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>3.5. Методология обучения</h3>
+                    <ul>
+                        <li>Разработка методики</li>
+                        <li>Контроль прогресса</li>
+                        <li>Адаптация программы</li>
+                        <li>Фильтрация клиентов</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>3.6. Продажи и масштабирование</h3>
+                    <ul>
+                        <li>Координация РОП</li>
+                        <li>Оптимизация воронки</li>
+                        <li>Тестирование гипотез</li>
+                        <li>Подготовка к масштабированию</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ДЕТАЛИ: План запуска -->
+        <section>
+            <h2>4. План запуска (февраль — август 2026)</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Февраль — Март</div>
+                        <h4>Погружение и запуск</h4>
+                        <p><strong>Неделя 1–2:</strong> Онбординг, аудит процессов</p>
+                        <p><strong>Неделя 3–4:</strong> Запуск дашборда, управление нишей Avito</p>
+                        <p><strong>Март:</strong> Режим 2+ ниши/мес. Запуск «Программирование с нейросетями» + вторая ниша</p>
+                        <div class="success-box">
+                            <strong>Результат:</strong> 30–50 подписчиков, 3 ниши, процессы задокументированы
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Апрель — Май</div>
+                        <h4>Масштабирование ниш</h4>
+                        <p>Режим 2+ ниши/мес продолжается (Яндекс.Директ и др.)</p>
+                        <p>Оптимизация воронки, масштабирование продаж</p>
+                        <p>Автоматизированный контроль качества</p>
+                        <div class="success-box">
+                            <strong>Результат:</strong> 100–200 подписчиков, 5–7 ниш, retention > 70%
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Июнь — Август</div>
+                        <h4>Рост и автономность</h4>
+                        <p>Достижение 500 подписчиков (MRR 1,5 млн ₽/мес)</p>
+                        <p>Система работает с минимальным ручным управлением</p>
+                        <p>Форумы, конференции, B2B-лиды</p>
+                        <div class="success-box">
+                            <strong>Результат:</strong> 300–500 подписчиков, 9–13 ниш, MRR 900K–1.5M ₽
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИНФОГРАФИКА: KPI -->
+        <section>
+            <h2>5. KPI и ожидания</h2>
+            
+            <div class="infographic">
+                <h3>Ключевые метрики</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">3</div>
+                        <div class="metric-label">Ниши (мес. 1–2)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">5–7</div>
+                        <div class="metric-label">Ниши (мес. 3–4)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">9–13</div>
+                        <div class="metric-label">Ниши (мес. 5–6)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">30–50</div>
+                        <div class="metric-label">Подписчики (мес. 1–2)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">100–200</div>
+                        <div class="metric-label">Подписчики (мес. 3–4)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">300–500</div>
+                        <div class="metric-label">Подписчики (мес. 5–6)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Метрика</th>
+                        <th>Месяц 1–2</th>
+                        <th>Месяц 3–4</th>
+                        <th>Месяц 5–6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Активные подписчики</strong></td>
+                        <td>30–50</td>
+                        <td>100–200</td>
+                        <td>300–500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ниши запущены</strong></td>
+                        <td>3</td>
+                        <td>5–7</td>
+                        <td>9–13</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MRR</strong></td>
+                        <td>90–150K ₽</td>
+                        <td>300–600K ₽</td>
+                        <td>900K–1.5M ₽</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Retention (мес.)</strong></td>
+                        <td>> 60%</td>
+                        <td>> 70%</td>
+                        <td>> 75%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NPS</strong></td>
+                        <td>Замер</td>
+                        <td>> 7</td>
+                        <td>> 8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Эксперты в команде</strong></td>
+                        <td>2</td>
+                        <td>4–6</td>
+                        <td>8–12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ДЕТАЛИ: Время и вовлечённость -->
+        <section>
+            <h2>6. Время и вовлечённость</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Период</th>
+                        <th>Вовлечённость</th>
+                        <th>Часы/нед</th>
+                        <th>Формат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Месяц 1 (онбординг)</strong></td>
+                        <td>Полная</td>
+                        <td>40+</td>
+                        <td>Погружение, аудит, синки с командой</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Месяц 2–3 (запуск)</strong></td>
+                        <td>Полная</td>
+                        <td>35–40</td>
+                        <td>Операционка + рост</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Месяц 4–6 (масштаб)</strong></td>
+                        <td>Высокая</td>
+                        <td>30–35</td>
+                        <td>Управление + стратегия</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Месяц 7+ (автономность)</strong></td>
+                        <td>Управленческая</td>
+                        <td>25–30</td>
+                        <td>Контроль + развитие</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="highlight-box">
+                <p><strong>Формат работы:</strong> Удалённо (100%), обязательное пересечение с командой в рабочие часы (MSK), доступность для оперативных вопросов в мессенджерах.</p>
+            </div>
+        </section>
+
+        <!-- ДЕТАЛИ: Вознаграждение -->
+        <section>
+            <h2>7. Условия вознаграждения</h2>
+            
+            <h3>Модель: Revenue Share от прибыли НейроКлуба</h3>
+            <p>Вознаграждение CEO привязано к результатам — чем быстрее растёт клуб, тем больше зарабатывает CEO.</p>
+            
+            <div class="pyramid-middle">
+                <div class="argument-card">
+                    <h3>Базовая ставка</h3>
+                    <p>[Обсуждается] — фиксированный минимум на период запуска (первые 3 мес)</p>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>% от прибыли</h3>
+                    <p>[15–25%] от чистой прибыли НейроКлуба</p>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>Бонус за KPI</h3>
+                    <p>Дополнительная выплата при достижении ключевых метрик (500 подписчиков, retention > 75%)</p>
+                </div>
+            </div>
+            
+            <h3>Прогноз дохода CEO (при 20% от чистой прибыли)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Период</th>
+                        <th>MRR клуба</th>
+                        <th>Расходы</th>
+                        <th>Чистая прибыль</th>
+                        <th>Доход CEO/мес</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Месяц 1–2</td>
+                        <td>90–150K ₽</td>
+                        <td>~100K ₽</td>
+                        <td>~0–50K ₽</td>
+                        <td>Базовая ставка</td>
+                    </tr>
+                    <tr>
+                        <td>Месяц 3–4</td>
+                        <td>300–600K ₽</td>
+                        <td>~150K ₽</td>
+                        <td>150–450K ₽</td>
+                        <td>30–90K ₽ + база</td>
+                    </tr>
+                    <tr>
+                        <td>Месяц 5–6</td>
+                        <td>900K–1.5M ₽</td>
+                        <td>~250K ₽</td>
+                        <td>650K–1.25M ₽</td>
+                        <td>130–250K ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Месяц 7–12</td>
+                        <td>1.5M+ ₽</td>
+                        <td>~300K ₽</td>
+                        <td>1.2M+ ₽</td>
+                        <td><strong>240K+ ₽</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="success-box">
+                <p><strong>При достижении цели 500 подписчиков</strong> (MRR 1,5 млн ₽) и расходах ~300K ₽, чистая прибыль составит ~1,2 млн ₽/мес. CEO зарабатывает <strong>~240 000 ₽/мес и выше</strong>.</p>
+            </div>
+        </section>
+
+        <!-- ДЕТАЛИ: Контрольные точки -->
+        <section>
+            <h2>8. Контрольные точки</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Срок</th>
+                        <th>Что оцениваем</th>
+                        <th>Критерии успеха</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1 месяц</strong></td>
+                        <td>Онбординг завершён</td>
+                        <td>Процессы описаны, дашборд работает, команда в курсе</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 месяца</strong></td>
+                        <td>Операционка стабильна</td>
+                        <td>50+ подписчиков, 3+ ниши, retention > 60%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6 месяцев</strong></td>
+                        <td>Рост устойчив</td>
+                        <td>200+ подписчиков, 6+ ниш, MRR > 600K ₽</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12 месяцев</strong></td>
+                        <td>Масштабирование</td>
+                        <td>500+ подписчиков, система автономна, B2B-лиды</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="warning-box">
+                <p><strong>Испытательный период:</strong> 3 месяца. По итогам — обоюдное решение о продолжении сотрудничества.</p>
+            </div>
+        </section>
+
+        <!-- ДЕТАЛИ: Риски -->
+        <section>
+            <h2>9. Риски и честные ожидания</h2>
+            
+            <div class="pyramid-middle">
+                <div class="argument-card">
+                    <h3>Что будет непросто</h3>
+                    <ul>
+                        <li>Стартап-хаос: процессов мало</li>
+                        <li>Рынок новый: нет устоявшихся моделей</li>
+                        <li>Зависимость от экспертов</li>
+                        <li>Органический рост без рекламы</li>
+                    </ul>
+                </div>
+                
+                <div class="argument-card">
+                    <h3>Что в плюсе</h3>
+                    <ul>
+                        <li>Сильный продукт: реальные инструменты</li>
+                        <li>AI-бум: огромный спрос</li>
+                        <li>Низкие расходы</li>
+                        <li>Основатель в деле</li>
+                        <li>Масштабируемость</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Следующий шаг -->
+        <section>
+            <h2>Следующий шаг</h2>
+            <ol>
+                <li>Знакомство с основателем (Богдан) — видеозвонок 30–60 мин</li>
+                <li>Обсуждение условий и ожиданий</li>
+                <li>Согласование финальных условий вознаграждения</li>
+                <li>Договор и старт</li>
+            </ol>
+        </section>
+
+        <div class="footer">
+            <p>Этот документ — приглашение к диалогу, а не финальный контракт. Все условия обсуждаемы и могут быть скорректированы по итогам переговоров.</p>
+        </div>
+    </div>
+</body>
+</html>

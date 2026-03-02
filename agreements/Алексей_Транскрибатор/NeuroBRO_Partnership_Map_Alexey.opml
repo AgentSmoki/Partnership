@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>NeuroBRO Partnership — Вклад и отдача Алексея</title>
+    <dateCreated>Tue, 17 Feb 2026 12:00:00 GMT</dateCreated>
+  </head>
+  <body>
+    <outline text="NeuroBRO Partnership Map — Алексей">
+      
+      <!-- Совместные продукты -->
+      <outline text="🎯 Совместные продукты (доля 50/50)">
+        <outline text="Транскрибатор v2">
+          <outline text="B2C подписка: 500-2000 ₽/мес"/>
+          <outline text="B2B API: 5000-50000 ₽/мес"/>
+          <outline text="Прогноз Q4: 300-500 клиентов B2C, 10-20 B2B"/>
+        </outline>
+        <outline text="Агент-приложение">
+          <outline text="App Store + Google Play"/>
+          <outline text="Подписка: 500-1500 ₽/мес"/>
+          <outline text="Прогноз Q4: 200-500 пользователей"/>
+        </outline>
+        <outline text="Бот доступа к нейронкам">
+          <outline text="Telegram-подписка: 300-1000 ₽/мес"/>
+          <outline text="Прогноз Q4: 200-400 пользователей"/>
+        </outline>
+        <outline text="AI Business Assistant">
+          <outline text="Freemium + корпоративный: 3000-10000 ₽/мес"/>
+          <outline text="Прогноз Q4: 50-100 компаний"/>
+        </outline>
+      </outline>
+
+      <!-- Финансовый вклад -->
+      <outline text="💰 Финансовый вклад Алексея">
+        <outline text="Q1 (фев-апр): 465 000 ₽">
+          <outline text="Февраль: 205 000 ₽">
+            <outline text="Программист: 80 000 ₽"/>
+            <outline text="Дизайнер: 100 000 ₽"/>
+            <outline text="Apple/Google: 5 000 ₽"/>
+            <outline text="AI подписки: 20 000 ₽"/>
+          </outline>
+          <outline text="Март: 105 000 ₽">
+            <outline text="Программист: 80 000 ₽"/>
+            <outline text="Apple/Google: 5 000 ₽"/>
+            <outline text="AI подписки: 20 000 ₽"/>
+          </outline>
+          <outline text="Апрель: 155 000 ₽">
+            <outline text="Программист: 80 000 ₽"/>
+            <outline text="Apple/Google: 5 000 ₽"/>
+            <outline text="AI подписки: 20 000 ₽"/>
+            <outline text="Расширение серверов: 0-500 000 ₽"/>
+          </outline>
+        </outline>
+        <outline text="Q2 (май-июл): 615 000 ₽">
+          <outline text="Программист: 240 000 ₽ (80К×3)"/>
+          <outline text="AI подписки: 60 000 ₽ (20К×3)"/>
+          <outline text="Apple/Google: 15 000 ₽ (5К×3)"/>
+          <outline text="Маркетинг: 150 000 ₽ (50К×3)"/>
+          <outline text="Расширение серверов: 150 000 ₽ (50К×3)"/>
+        </outline>
+        <outline text="Q3 (авг-окт): 1 110 000 ₽">
+          <outline text="2 программиста: 480 000 ₽ (160К×3)"/>
+          <outline text="AI подписки: 90 000 ₽ (30К×3)"/>
+          <outline text="Инфраструктура: 240 000 ₽ (80К×3)"/>
+          <outline text="Маркетинг: 300 000 ₽ (100К×3)"/>
+        </outline>
+        <outline text="Q4 (ноя-янв): 1 920 000 ₽">
+          <outline text="2-3 разработчика: 720 000 ₽ (240К×3)"/>
+          <outline text="AI подписки: 150 000 ₽ (50К×3)"/>
+          <outline text="Инфраструктура: 450 000 ₽ (150К×3)"/>
+          <outline text="Маркетинг: 450 000 ₽ (150К×3)"/>
+          <outline text="Офис/прочее: 150 000 ₽ (50К×3)"/>
+        </outline>
+        <outline text="ИТОГО ЗА ГОД: ~4 110 000 ₽">
+          <outline text="Q1: 11% (465К)"/>
+          <outline text="Q2: 15% (615К)"/>
+          <outline text="Q3: 27% (1.11М)"/>
+          <outline text="Q4: 47% (1.92М)"/>
+        </outline>
+      </outline>
+
+      <!-- Неденежный вклад -->
+      <outline text="🔧 Неденежный вклад Алексея">
+        <outline text="Сервер + GPU">
+          <outline text="Оценка: 500 000 – 2 000 000 ₽"/>
+          <outline text="Предоставлен без аренды"/>
+        </outline>
+        <outline text="Методологии">
+          <outline text="Базы знаний"/>
+          <outline text="Настройка агентов"/>
+          <outline text="Мировоззренческая настройка"/>
+        </outline>
+        <outline text="B2B-связи">
+          <outline text="Оценка: 200 000 – 1 000 000 ₽"/>
+          <outline text="Контакты для корпоративных внедрений"/>
+        </outline>
+        <outline text="Стратегия">
+          <outline text="5-10 ч/нед"/>
+          <outline text="Управленческий уровень"/>
+        </outline>
+      </outline>
+
+      <!-- Отдача Алексею -->
+      <outline text="💸 Отдача Алексею (50% от прибыли)">
+        <outline text="Прогноз MRR по кварталам">
+          <outline text="Q1: MRR 50К → Алексею 7 500 ₽/мес (22 500 ₽ за квартал)"/>
+          <outline text="Q2: MRR 300К → Алексею 45 000 ₽/мес (135 000 ₽ за квартал)"/>
+          <outline text="Q3: MRR 1.5М → Алексею 225 000 ₽/мес (675 000 ₽ за квартал)"/>
+          <outline text="Q4: MRR 5М → Алексею 750 000 ₽/мес (2 250 000 ₽ за квартал)"/>
+        </outline>
+        <outline text="Накопленная прибыль за год: ~3 082 500 ₽">
+          <outline text="Маржинальность ~30% после расходов"/>
+        </outline>
+        <outline text="📈 ROI (Return on Investment)">
+          <outline text="Год 1: Вложения 4.11М → Прибыль 3.08М → ROI -25% (инвестиционный)"/>
+          <outline text="Год 2: Вложения ~5М → Прибыль ~15М → ROI +200%"/>
+          <outline text="Год 3: Вложения ~6М → Прибыль ~30М → ROI +400%"/>
+          <outline text="Точка окупаемости: Q2 2027 (через 12-15 месяцев)"/>
+        </outline>
+      </outline>
+
+      <!-- Зоны ответственности -->
+      <outline text="📋 Зоны ответственности Алексея">
+        <outline text="Финансирование">
+          <outline text="Уровень: Исполнительский"/>
+          <outline text="Часы: 5-10/нед"/>
+          <outline text="Результат (6 мес): 4.11М ₽ вложено"/>
+        </outline>
+        <outline text="B2B-продажи">
+          <outline text="Уровень: Управленческий"/>
+          <outline text="Часы: 5-10/нед"/>
+          <outline text="Результат (6 мес): 3+ B2B-клиента"/>
+        </outline>
+        <outline text="Стратегия и партнёрства">
+          <outline text="Уровень: Управленческий"/>
+          <outline text="Часы: 5-10/нед"/>
+          <outline text="Результат (6 мес): Партнёрство оформлено юридически"/>
+        </outline>
+        <outline text="Методологии и базы знаний">
+          <outline text="Уровень: Исполнительский"/>
+          <outline text="Часы: 10-15/нед"/>
+          <outline text="Результат (6 мес): Базы знаний созданы"/>
+        </outline>
+        <outline text="Серверная инфраструктура">
+          <outline text="Уровень: Владельческий"/>
+          <outline text="Часы: 2-5/нед"/>
+          <outline text="Результат (6 мес): Сервер обслуживает все продукты стабильно"/>
+        </outline>
+      </outline>
+
+      <!-- Распределение проектов -->
+      <outline text="🎯 Распределение проектов">
+        <outline text="✅ Алексей участвует (50/50)">
+          <outline text="Транскрибатор v2">
+            <outline text="Роль: B2B-продажи, API-ключи"/>
+            <outline text="Доход: 50% от B2B-контрактов"/>
+          </outline>
+          <outline text="Агент-приложение">
+            <outline text="Роль: Стратегия, серверы"/>
+            <outline text="Доход: 50% от подписок"/>
+          </outline>
+          <outline text="Бот нейронок">
+            <outline text="Роль: Методологии, серверы"/>
+            <outline text="Доход: 50% от подписок"/>
+          </outline>
+          <outline text="AI Business Assistant">
+            <outline text="Роль: B2B-внедрения"/>
+            <outline text="Доход: 50% от корпоративных клиентов"/>
+          </outline>
+        </outline>
+        <outline text="❌ Алексей НЕ участвует">
+          <outline text="Нейроклуб: 100% Богдан (0% Алексей)">
+            <outline text="НО: покрывает 50% расходов на серверы/токены"/>
+          </outline>
+          <outline text="YouTube-канал: 100% Богдан"/>
+          <outline text="Бренды (НейроИмпульс и др.): 100% Богдан"/>
+        </outline>
+      </outline>
+
+      <!-- Интеллектуальная собственность -->
+      <outline text="🎁 Интеллектуальная собственность">
+        <outline text="Код AI-сервисов: 50% Алексей"/>
+        <outline text="Домены, аккаунты: 50% Алексей"/>
+        <outline text="База знаний (вклад Алексея): 100% Алексей"/>
+        <outline text="База знаний (вклад Богдана): 100% Богдан"/>
+      </outline>
+
+      <!-- Синергия с Гиперклубом -->
+      <outline text="🔄 Синергия с Гиперклубом">
+        <outline text="GPU Гиперклуба в ночное время"/>
+        <outline text="Снижение затрат на облачные серверы"/>
+        <outline text="Прогноз экономии: 50 000 – 200 000 ₽/мес с Q4 2026"/>
+        <outline text="Инвестиции в Гиперклуб: 3,5 — 13,5 млн ₽ (отдельный проект)"/>
+        <outline text="Прогноз прибыли: 500 — 900 тыс. ₽/мес чистыми"/>
+      </outline>
+
+      <!-- Траектория роста -->
+      <outline text="🚀 Траектория роста доли Алексея">
+        <outline text="2026: Вложения 4.11М → Прибыль 3.08М → Баланс -1.03М ₽"/>
+        <outline text="2027: Вложения 9.11М → Прибыль 18.08М → Баланс +9.0М ₽"/>
+        <outline text="2028: Вложения 15.11М → Прибыль 48.08М → Баланс +33.0М ₽"/>
+        <outline text="2029: Вложения 21.11М → Прибыль 108.08М → Баланс +87.0М ₽"/>
+        <outline text="Стоимость доли к 2029: ~600 млн ₽ (×3 к выручке 1.2 млрд)"/>
+      </outline>
+
+      <!-- Риски -->
+      <outline text="⚠️ Риски для Алексея">
+        <outline text="Убытки первого года (-1М ₽)">
+          <outline text="Вероятность: Высокая"/>
+          <outline text="Митигация: Заложено в план, окупаемость в 2027"/>
+        </outline>
+        <outline text="Product-Market Fit не найден">
+          <outline text="Вероятность: Средняя"/>
+          <outline text="Митигация: Нейроклуб как тестовая аудитория"/>
+        </outline>
+        <outline text="Блокировка AI-подписок из РФ">
+          <outline text="Вероятность: Высокая"/>
+          <outline text="Митигация: Иностранное юрлицо, альтернативные модели"/>
+        </outline>
+        <outline text="Разногласия с Богданом">
+          <outline text="Вероятность: Низкая"/>
+          <outline text="Митигация: Матрица полномочий, медиация, стоп-слово"/>
+        </outline>
+      </outline>
+
+      <!-- Ключевые метрики -->
+      <outline text="📊 Ключевые метрики по кварталам">
+        <outline text="Платящие пользователи">
+          <outline text="Q1: 20"/>
+          <outline text="Q2: 100"/>
+          <outline text="Q3: 400"/>
+          <outline text="Q4: 1000+"/>
+        </outline>
+        <outline text="B2B-клиенты">
+          <outline text="Q1: 1-3"/>
+          <outline text="Q2: 5-10"/>
+          <outline text="Q3: 15-20"/>
+          <outline text="Q4: 30+"/>
+        </outline>
+        <outline text="MRR (Monthly Recurring Revenue)">
+          <outline text="Q1: 50K"/>
+          <outline text="Q2: 300K"/>
+          <outline text="Q3: 1.5M"/>
+          <outline text="Q4: 5M"/>
+        </outline>
+        <outline text="Размер команды">
+          <outline text="Q1: 2 человека"/>
+          <outline text="Q2: 3 человека"/>
+          <outline text="Q3: 4-5 человек"/>
+          <outline text="Q4: 5-7 человек"/>
+        </outline>
+      </outline>
+
+      <!-- Резюме -->
+      <outline text="✅ РЕЗЮМЕ">
+        <outline text="ВКЛАД">
+          <outline text="💰 4.11 млн ₽ денежных средств за первый год"/>
+          <outline text="🖥️ Сервер + GPU (экономия 0.5-2 млн ₽/год)"/>
+          <outline text="🧠 Методологии и базы знаний"/>
+          <outline text="🤝 B2B-связи для корпоративных продаж"/>
+          <outline text="⏱️ 30-40 ч/мес на стратегию и внедрения"/>
+        </outline>
+        <outline text="ПРОЕКТЫ (50/50)">
+          <outline text="✅ Транскрибатор v2"/>
+          <outline text="✅ Агент-приложение"/>
+          <outline text="✅ Бот доступа к нейронкам"/>
+          <outline text="✅ AI Business Assistant"/>
+          <outline text="❌ Нейроклуб (0%, но покрывает 50% инфраструктуры)"/>
+        </outline>
+        <outline text="ОТДАЧА">
+          <outline text="💸 3.08 млн ₽ чистой прибыли за первый год (50%)"/>
+          <outline text="📈 ROI 200-400% со второго года"/>
+          <outline text="💎 Доля стоимостью ~600 млн ₽ к 2029 году"/>
+          <outline text="🔄 Ежеквартальные дивиденды с Q2 2026"/>
+          <outline text="🛡️ Право вето на критичные решения"/>
+        </outline>
+      </outline>
+
+    </outline>
+  </body>
+</opml>
